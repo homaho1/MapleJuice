@@ -1,0 +1,140 @@
+version: '3'
+services:
+  server01:
+    container_name: server01
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myserver
+    hostname: server01.mp1_default
+    volumes:
+      - ./logs/m1:/app/logs
+      - ./test_file/m1:/app/test_file
+      - ./sdfs/m1:/app/sdfs
+      - ./src:/app
+  server02:
+    container_name: server02
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myserver
+    hostname: server02.mp1_default
+    volumes:
+      - ./logs/m2:/app/logs
+      - ./test_file/m2:/app/test_file
+      - ./sdfs/m2:/app/sdfs
+      - ./src:/app
+    depends_on:
+      - server01
+  server03:
+    container_name: server03
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myserver
+    hostname: server03.mp1_default
+    volumes:
+      - ./logs/m3:/app/logs
+      - ./test_file/m3:/app/test_file
+      - ./sdfs/m3:/app/sdfs
+      - ./src:/app
+    depends_on:
+      - server01
+  server04:
+    container_name: server04
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myserver
+    hostname: server04.mp1_default
+    volumes:
+      - ./logs/m4:/app/logs
+      - ./test_file/m4:/app/test_file
+      - ./sdfs/m4:/app/sdfs
+      - ./src:/app
+    depends_on:
+      - server01
+  server05:
+    container_name: server05
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myserver
+    hostname: server05.mp1_default
+    volumes:
+      - ./logs/m5:/app/logs
+      - ./test_file/m5:/app/test_file
+      - ./sdfs/m5:/app/sdfs
+      - ./src:/app
+    depends_on:
+      - server01
+  server06:
+    container_name: server06
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myserver
+    hostname: server06.mp1_default
+    volumes:
+      - ./logs/m6:/app/logs
+      - ./test_file/m6:/app/test_file
+      - ./sdfs/m6:/app/sdfs
+      - ./src:/app
+    depends_on:
+      - server01
+  server07:
+    container_name: server07
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myserver
+    hostname: server07.mp1_default
+    volumes:
+      - ./logs/m7:/app/logs
+      - ./test_file/m7:/app/test_file
+      - ./sdfs/m7:/app/sdfs
+      - ./src:/app
+    depends_on:
+      - server01
+  server08:
+    container_name: server08
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myserver
+    hostname: server08.mp1_default
+    volumes:
+      - ./logs/m8:/app/logs
+      - ./test_file/m8:/app/test_file
+      - ./sdfs/m8:/app/sdfs
+      - ./src:/app
+    depends_on:
+      - server01
+  server09:
+    container_name: server09
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myserver
+    hostname: server09.mp1_default
+    volumes:
+      - ./logs/m9:/app/logs
+      - ./test_file/m9:/app/test_file
+      - ./sdfs/m9:/app/sdfs
+      - ./src:/app
+    depends_on:
+      - server01
+  server10:
+    container_name: server10
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myserver
+    hostname: server10.mp1_default
+    volumes:
+      - ./logs/m10:/app/logs
+      - ./test_file/m10:/app/test_file
+      - ./sdfs/m10:/app/sdfs
+      - ./src:/app
+    depends_on:
+      - server01

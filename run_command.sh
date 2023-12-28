@@ -1,0 +1,1 @@
+docker exec -it server$1 bash -c "echo $2 > /pipe"
