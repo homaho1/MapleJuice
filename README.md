@@ -1,4 +1,4 @@
-# MapleJuice
+# Simple Distributed File System w. MapReduce AKA MapleJuice
 
 MapleJuice is a simple distributed file system that utilizes membership protocols for its implementation. Additionally, it supports running MapReduce programs on the file system.
 
