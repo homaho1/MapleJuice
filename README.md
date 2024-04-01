@@ -7,7 +7,7 @@ MapleJuice is a simple distributed file system that utilizes membership protocol
 ### Docker
 
 1. Set `DOCKER` in config.py to `true`
-2. Run `docker built -t <image_name> .`
+2. Run `docker build -t <image_name> .`
 3. Run `docker compose up`
 4. Type command by running `sh run_command.sh <server_id> "<operation> <args>"`
 
